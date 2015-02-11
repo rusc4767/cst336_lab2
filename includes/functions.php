@@ -1,5 +1,6 @@
 <?php
 
+
 function acquireNumbers(){
 
         $five_random = array(0,0,0,0,0);
@@ -19,12 +20,25 @@ function acquireNumbers(){
             
         }while($ctr < 5);
             
-      
-        echo implode("  ",$five_random);
-
+        
+        //echo implode("  ",$five_random);
         return $five_random;
+
 }
-acquireNumbers();
+//acquireNumbers();
+//
+function runner(){
+    $playerOneCardVals = acquireNumbers();
+    $playerTwoCardVals = acquireNumbers();
+    $playerThreeCardVals = acquireNumbers();
+    $playerFourCardVales = acquireNumbers();
+    
+    $playerOneCardImgTags = suitArr($playerOneCardVals);
+    $playerTwoCardImgTags = suitArr($playerTwoCardVals);
+    $playerThreeCardImgTags = suitArr($playerThreeCardVals);
+    $playerFourCardImgTags = suitArr($playerFourCardVales);
+    
+}
 
 
 ?>
