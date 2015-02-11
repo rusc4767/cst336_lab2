@@ -12,17 +12,22 @@ function acquireNumbers(){
         {
             $rand_num = rand(1,13);
                
-             //if(!in_array($rand_num, $five_random)){
-             $five_random[$ctr] = $rand_num;
-             $ctr++;
-             //}
+                if(!in_array($rand_num, $five_random)){
+                $five_random[$ctr] = $rand_num;
+                $ctr++;
+             }
        
             
         }while($ctr < 5);
             
         
+
 }
 
+        echo implode("  ",$five_random);
+
+
+}
 acquireNumbers();
 
 
