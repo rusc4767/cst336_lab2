@@ -26,5 +26,22 @@ function acquireNumbers(){
 }
 acquireNumbers();
 
+function sumArrays($arr){
+    
+    foreach ($arr as $playerNums){
+        
+        foreach( $playerNums as $num){
+            
+            $tempSum += $num;
+            
+        }
+        
+        $sumValues[] = $tempSum;
+        
+    }
+    
+    return $sumValues;
+}
+
 
 ?>
