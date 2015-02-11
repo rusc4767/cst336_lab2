@@ -59,7 +59,7 @@ function acquireNumbers(){
 //acquireNumbers();
 
 
-?>        echo implode("  ",$five_random);
+        echo implode("  ",$five_random);
 
         return $five_random;
 }
