@@ -7,6 +7,30 @@
     To change this template use Tools | Templates.
 */
 
-root {
-    display: block;
+#wrapper{
+     width: 700px;
+     margin: auto;
+     background: green;
+     padding: 10px;
+     border-radius: 15px;
+
+ }
+
+h1{
+    
+}
+
+div #game
+table, tr, td{
+    
+}
+
+#rules{
+}
+
+h3{
+    
+}
+p{
+    
 }
