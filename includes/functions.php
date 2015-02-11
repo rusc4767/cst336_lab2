@@ -6,7 +6,7 @@ function acquireNumbers(){
         $five_random = array(0,0,0,0,0);
         $ctr = 0;
     
-        /*
+       
         
         do
         {
@@ -20,10 +20,7 @@ function acquireNumbers(){
             
         }while($ctr < 5);
             
-        */
         
-        foreach($five_random as $num)
-            echo $num;
 }
 
 acquireNumbers();
