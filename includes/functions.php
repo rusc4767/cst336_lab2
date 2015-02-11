@@ -45,10 +45,10 @@ function acquireNumbers(){
              }      
         }while($ctr < 5);
             
-      
-        echo implode("  ",$five_random);
+        
 
         return $five_random;
+
 }
 
 
@@ -69,6 +69,23 @@ function sumArrays($arr){
     return $sumValues;
 }
 
+
+
+
+}
+
+function runner(){
+    $playerOneCardVals = acquireNumbers();
+    $playerTwoCardVals = acquireNumbers();
+    $playerThreeCardVals = acquireNumbers();
+    $playerFourCardVales = acquireNumbers();
+    
+    $playerOneCardImgTags = suitArr($playerOneCardVals);
+    $playerTwoCardImgTags = suitArr($playerTwoCardVals);
+    $playerThreeCardImgTags = suitArr($playerThreeCardVals);
+    $playerFourCardImgTags = suitArr($playerFourCardVales);
+    
+}
 
 
 
