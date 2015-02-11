@@ -10,17 +10,20 @@
 #wrapper{
      width: 700px;
      margin: auto;
-     background: green;
+     background: #f75b75;
      padding: 10px;
      border-radius: 15px;
 
  }
 
 h1{
+    color: white;
     
 }
 
-div #game
+#game{
+    background: green;
+}
 table, tr, td{
     
 }
@@ -32,5 +35,6 @@ h3{
     
 }
 p{
+    color: gray;
     
 }
