@@ -1,6 +1,5 @@
 <?php
 
-
 function acquireNumbers(){
 
         $five_random = array(0,0,0,0,0);
@@ -20,13 +19,10 @@ function acquireNumbers(){
             
         }while($ctr < 5);
             
-        
-
-}
-
+      
         echo implode("  ",$five_random);
 
-
+        return $five_random;
 }
 acquireNumbers();
 
