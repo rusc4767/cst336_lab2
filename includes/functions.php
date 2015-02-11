@@ -50,3 +50,4 @@ function acquireNumbers(){
 
         return $five_random;
 }
+?>
