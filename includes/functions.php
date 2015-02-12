@@ -70,10 +70,6 @@ function sumArrays($arr){
 }
 
 
-
-
-}
-
 function runner(){
     $playerOneCardVals = acquireNumbers();
     $playerTwoCardVals = acquireNumbers();
@@ -87,7 +83,7 @@ function runner(){
     
 }
 
-
+/*
 
 function sumArrays($arr){
     
@@ -105,5 +101,6 @@ function sumArrays($arr){
     
     return $sumValues;
 }
+*/
 
 ?>
