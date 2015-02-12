@@ -59,10 +59,6 @@ function acquireNumbers(){
 }
 
 
-
-function runner(){
-    $playerOneCardVals = acquireNumbers();
-
 function runner1(){
 
     $playerOneCardVals = acquireNumbers();
@@ -92,16 +88,16 @@ function runner3(){
     return $playerThreeCardImgTags;
     
 }
-
-
-
-
-?>86e34830b3f1ac72c86344ff66
-
     
+function runner4(){
+
+    $playerFourCardVals = acquireNumbers();
+
+    $playerFourCardImgTags = suitArr($playerFourCardVals);
+
     return $playerFourCardImgTags;
-    
 }
-*/
+
+
 
 ?>
