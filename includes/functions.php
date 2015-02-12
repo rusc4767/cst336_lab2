@@ -28,9 +28,7 @@ function suitArr($cardValues){
                         $cardValues[5]);
      
     return $rand_suits;
-                         
-                         
-  
+                   
 }
 
 function acquireNumbers(){
@@ -38,8 +36,6 @@ function acquireNumbers(){
         $five_random = array(0,0,0,0,0,0);
         $ctr = 0;
         $num = 0;
-       
-        
         do
         {
             $rand_num = rand(1,13);
@@ -47,9 +43,7 @@ function acquireNumbers(){
                 if(!in_array($rand_num, $five_random)){
                 $five_random[$ctr] = $rand_num;
                 $ctr++;
-             }
-       
-            
+             }      
         }while($ctr < 5);
             
         
@@ -64,7 +58,38 @@ function acquireNumbers(){
         return $five_random;
 }
 
+<<<<<<< HEAD
 function runner1(){
+=======
+
+function sumArrays($arr){
+    
+    foreach ($arr as $playerNums){
+        
+        foreach( $playerNums as $num){
+            
+            $tempSum += $num;
+            
+        }
+        
+        $sumValues[] = $tempSum;
+        
+    }
+    
+    return $sumValues;
+}
+
+
+
+
+}
+
+function runner(){
+    $playerOneCardVals = acquireNumbers();
+    $playerTwoCardVals = acquireNumbers();
+    $playerThreeCardVals = acquireNumbers();
+    $playerFourCardVales = acquireNumbers();
+>>>>>>> 3a09aa92aff61c19abd5c4cccbc1cffb18a867a5
     
     $playerOneCardVals = acquireNumbers();
    
@@ -94,13 +119,17 @@ function runner3(){
 
 function runner4(){
 
+<<<<<<< HEAD
     $playerFourCardVales = acquireNumbers();
 
     $playerFourCardImgTags = suitArr($playerFourCardVales);
+=======
+
+function sumArrays($arr){
+>>>>>>> 3a09aa92aff61c19abd5c4cccbc1cffb18a867a5
     
     return $playerFourCardImgTags;
     
 }
-
 
 ?>
