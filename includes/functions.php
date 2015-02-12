@@ -59,44 +59,14 @@ function acquireNumbers(){
 }
 
 
-function runner1(){
-
+function runner(){
     $playerOneCardVals = acquireNumbers();
-
-   
     $playerOneCardImgTags = suitArr($playerOneCardVals);
 
     return $playerOneCardImgTags;
 }
 
-function runner2(){
 
-
-    $playerTwoCardVals = acquireNumbers();
-
-    $playerTwoCardImgTags = suitArr($playerTwoCardVals);
-
-    return $playerTwoCardImgTags;
-}
-
-function runner3(){
-
-    $playerThreeCardVals = acquireNumbers();
-
-    $playerThreeCardImgTags = suitArr($playerThreeCardVals);
-
-    return $playerThreeCardImgTags;
-    
-}
-    
-function runner4(){
-
-    $playerFourCardVals = acquireNumbers();
-
-    $playerFourCardImgTags = suitArr($playerFourCardVals);
-
-    return $playerFourCardImgTags;
-}
 
 
 

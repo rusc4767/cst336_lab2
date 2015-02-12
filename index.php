@@ -23,10 +23,10 @@
             <?php
         
             include 'includes/functions.php';
-            $player1 = runner1(); 
-            $player2 = runner2();
-            $player3 = runner3();
-            $player4 = runner4();
+            $player1 = runner(); 
+            $player2 = runner();
+            $player3 = runner();
+            $player4 = runner();
 
 
             echo "<table>
