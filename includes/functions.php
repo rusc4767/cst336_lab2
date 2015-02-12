@@ -24,7 +24,8 @@ function suitArr($cardValues){
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[1].png'>",
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[2].png'>",
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[3].png'>",
-                         "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[4].png'>");
+                         "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[4].png'>",
+                        $cardValues[5]);
      
     return $rand_suits;
                          
@@ -34,9 +35,9 @@ function suitArr($cardValues){
 
 function acquireNumbers(){
 
-        $five_random = array(0,0,0,0,0);
+        $five_random = array(0,0,0,0,0,0);
         $ctr = 0;
-    
+        $num = 0;
        
         
         do
@@ -52,39 +53,53 @@ function acquireNumbers(){
         }while($ctr < 5);
             
         
-
+    
+        for($i = 0;$i<5;$i++){
+            $num += $five_random[$i];
+        }
+        
+        $five_random[5] = $num;
+        
+    
         return $five_random;
 }
 
-function runner(){
-    $playerOneCardVals = acquireNumbers();
-    $playerTwoCardVals = acquireNumbers();
-    $playerThreeCardVals = acquireNumbers();
-    $playerFourCardVales = acquireNumbers();
+function runner1(){
     
+    $playerOneCardVals = acquireNumbers();
+   
     $playerOneCardImgTags = suitArr($playerOneCardVals);
+
+    return $playerOneCardImgTags;
+}
+
+function runner2(){
+
+    $playerTwoCardVals = acquireNumbers();
+
     $playerTwoCardImgTags = suitArr($playerTwoCardVals);
+
+    return $playerTwoCardImgTags;
+}
+
+function runner3(){
+
+    $playerThreeCardVals = acquireNumbers();
+
     $playerThreeCardImgTags = suitArr($playerThreeCardVals);
-    $playerFourCardImgTags = suitArr($playerFourCardVales);
+
+    return $playerThreeCardImgTags;
     
 }
 
+function runner4(){
 
-function sumArrays($arr){
+    $playerFourCardVales = acquireNumbers();
+
+    $playerFourCardImgTags = suitArr($playerFourCardVales);
     
-    foreach ($arr as $playerNums){
-        
-        foreach( $playerNums as $num){
-            
-            $tempSum += $num;
-            
-        }
-        
-        $sumValues[] = $tempSum;
-        
-    }
+    return $playerFourCardImgTags;
     
-    return $sumValues;
 }
 
 

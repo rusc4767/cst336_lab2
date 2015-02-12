@@ -1,25 +1,28 @@
 /*
     Document   : labs/cst336_lab2/css/styles．css
     Created on : 2015-02-11 06:34 PM
-    Author     : rusc4767
+    Author     : rusc4767,sort1554
     Description:
     Purpose of the stylesheet follows.
     To change this template use Tools | Templates.
 */
 
+body{
+   background-image: url("http://www.pix123.com/gamesandcash/NewsImages/321277_Multihand-blackjack.png");
+}
+
 #wrapper{
-     width: 1000px;
+     width: 800px;
+     height: 700px;
      margin: auto;
-     background: #f75b75;
      padding: 10px;
      border-radius: 15px;
-
  }
 
 h1{
-    color: white;
-    text-align: center;
-    
+    color: black;
+    background-color:rgba(192,192,192,.6);
+    text-align: center;   
 }
 
 button{
@@ -27,26 +30,31 @@ button{
     text-align: center;
 }
 
-#game{
-    background: green;
+#game{ 
+    margin: 30px;
+    background-color: rgba(0,128,0,.6);
+    border: 1px solid black;
     text-align: center;
-    width: 600px;
-    padding: 10px;
+    width: 650px;
+    height: 470px;
     margin-left: auto;
     margin-right: auto;
     
 }
-table, tr, td{
+td{
+   color:white; 
     
 }
-
-#rules{
+td{
+    opacity: 1.0;
 }
-
-h3{
-    
+#sumValue{
+    font-size:3em;
 }
 p{
-    color: gray;
-    
+    margin: 30px;
+    background-color: rgba(192,192,192,.6);
+    border: 1px solid black;
+    color:black;
+    font-size:1.5em;  
 }
