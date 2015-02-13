@@ -38,18 +38,23 @@ function acquireNumbers(){
             
         
     
-        for($i = 0;$i<5;$i++){
-            $num += $five_random[$i];
-        }
+//         for($i = 0;$i<5;$i++){
+//             $num += $five_random[$i];
+//         }
         
-        $five_random[5] = $num;
+//         $five_random[5] = $num;
         
     
-        return $five_random;
+         return $five_random;
 }
 
 function getPlayerScore($arr){
-    return array_sum($arr);
+    $sum = 0;
+    foreach($arr as $val){
+        $sum = $sum + $val;
+        
+    }
+    return $sum;
 }
 
 function displayPlayerCards($playerCards){
@@ -59,10 +64,10 @@ function displayPlayerCards($playerCards){
 }
 function getWinner($scores){
     $winner = 0;
-    $difference = $scores[0] - 42;
+    $difference = abs(42 - $scores[0]);
     for($i = 1; $i < count($scores); $i++){
-        if($difference > $scores[$i] - 42){
-            $difference = $scores[$i] - 42;
+        if($difference > abs(42 - $scores[$i])){
+            $difference = abs(42 - $scores[$i]);
             $winner = $i;
         }
     }
