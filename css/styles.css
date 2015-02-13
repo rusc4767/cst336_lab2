@@ -59,15 +59,8 @@ p{
     border: 1px solid black;
     color:black;
     font-size:1.5em;  
-},.6);
-    border: 1px solid black;
-    text-align: center;
-    width: 650px;
-    height: 470px;
-    margin-left: auto;
-    margin-right: auto;
-    
 }
+
 td{
    color:white; 
     
@@ -77,16 +70,4 @@ td{
 }
 #sumValue{
     font-size:3em;
-}
-p{
-<<<<<<< HEAD
-    color: white;
-    
-=======
-    margin: 30px;
-    background-color: rgba(192,192,192,.6);
-    border: 1px solid black;
-    color:black;
-    font-size:1.5em;  
->>>>>>> c796663aa03c2b86e34830b3f1ac72c86344ff66
 }
