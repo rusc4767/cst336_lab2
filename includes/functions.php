@@ -18,7 +18,7 @@ function suitArr($cardValues){
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[4].png'>");
      
     return $rand_suits;
-                   
+            
 }
 
 function acquireNumbers(){
@@ -44,7 +44,6 @@ function acquireNumbers(){
         
         $five_random[5] = $num;
         
-    
         return $five_random;
 }
 
@@ -72,6 +71,7 @@ function getWinner($scores){
 
     $playerOneCardVals = acquireNumbers();
     $playerOneCards = suitArr($playerOneCardVals);
+
     
     $playerTwoCardVals = acquireNumbers();
     $playerTwoCards = suitArr($playerTwoCardVals);
@@ -82,17 +82,11 @@ function getWinner($scores){
     $playerFourCardVals = acquireNumbers();
     $playerFourCards = suitArr($playerFourCardVals);
     
-    $playerOneScore = getPlayerScore($playerOneCardVals);
-    $playerTwoScore = getPlayerScore($playerTwoCardVals);
+    $playerOneScore   = getPlayerScore($playerOneCardVals);
+    $playerTwoScore   = getPlayerScore($playerTwoCardVals);
     $playerThreeScore = getPlayerScore($playerThreeCardVals);
-    $playerFourScore = getPlayerScore($playerFourCardVals);
+    $playerFourScore  = getPlayerScore($playerFourCardVals);
     
     $winner = getWinner(array($playerOneScore, $playerTwoScore, $playerThreeScore,$playerFourScore));
-
-
-
-
-
-
 
 ?>
