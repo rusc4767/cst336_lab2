@@ -21,65 +21,47 @@
         <div id="game">
             
             <?php
-        
-            include 'includes/functions.php';
-            $player1 = runner(); 
-            $player2 = runner();
-            $player3 = runner();
-            $player4 = runner();
+
+                include 'includes/functions.php';
+                echo "<table>";
+                echo  "<tr>
+                            <td><img src='img/people/edgar_sandoval.png'/></td>";
+                displayPlayerCards($playerOneCards);
+                echo "<td id='sumValue'>".$playerOneScore."</td>";
+                if($winner == 0){
+                    echo "<td id='winner'>Winner!</td>";
+                }
+                echo "</tr>";
+
+                echo  "<tr>
+                     <td><img src='img/people/devon_rusconi.png'/></td>";
+                displayPlayerCards($playerTwoCards);
+                echo "<td id='sumValue'>".$playerTwoScore."</td>";
+                if($winner == 1){
+                    echo "<td id='winner'>Winner!</td>";
+                }            
+                echo "</tr>";
+
+                echo  "<tr>
+                            <td><img src='img/people/arturo_lopez.png'/></td>";
+                displayPlayerCards($playerThreeCards);
+                echo "<td id='sumValue'>".$playerThreeScore."</td>";
+                if($winner == 2){
+                    echo "<td id='winner'>Winner!</td>";
+                }
+                echo "</tr>";
+
+                echo  "<tr>
+                            <td><img src='img/people/alcides_sorto.png'/></td>";
+                displayPlayerCards($playerFourCards);
+                echo "<td id='sumValue'>".$playerFourScore."</td>";
+                if($winner == 3){
+                    echo "<td id='winner'>Winner!</td>";
+                }
+                echo "</tr>";
 
 
-            echo "<table>
-                
-                <!-- row 1 -->
-                <tr>
-                    
-                    <td><img src='img/people/edgar_sandoval.png' /></td>
-                    <td>".$player1[0]."</td>
-                    <td>".$player1[1]."</td>
-                    <td>".$player1[2]."</td>
-                    <td>".$player1[3]."</td>
-                    <td>".$player1[4]."</td>
-                    <td id='sumValue'>".$player1[5]."</td>
-                    </tr>
-                    
-                <!-- row 2 -->
-                <tr>
-                    <td><img src='img/people/devon_rusconi.png' /></td>
-                    <td>".$player2[0]."</td>
-                    <td>".$player2[1]."</td>
-                    <td>".$player2[2]."</td>
-                    <td>".$player2[3]."</td>
-                    <td>".$player2[4]."</td>
-                    <td id='sumValue'>".$player2[5]."</td>
-                    
-                </tr>
-                <!-- row 3 -->
-                <tr>
-                    <td><img src='img/people/arturo_lopez.png' /></td>
-                    <td>".$player3[0]."</td>
-                    <td>".$player3[1]."</td>
-                    <td>".$player3[2]."</td>
-                    <td>".$player3[3]."</td>
-                    <td>".$player3[4]."</td>
-                    <td id='sumValue'>".$player3[5]."</td>
-                    
-                </tr>
-                <!-- row 4 -->
-                <tr>
-                    <td><img src='img/people/alcides_sorto.png' /></td>
-                    <td>".$player4[0]."</td>
-                    <td>".$player4[1]."</td>
-                    <td>".$player4[2]."</td>
-                    <td>".$player4[3]."</td>
-                    <td>".$player4[4]."</td>
-                    <td id='sumValue'>".$player4[5]."</td>
-                    <td id='winner'>Winner</td>
-                    
-                </tr>
-                
-            </table>"
-    
+                echo "</table>";                  
             ?>
             <button onClick='location.reload();'>
                 Play Again

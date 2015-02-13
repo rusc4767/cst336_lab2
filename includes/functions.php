@@ -2,18 +2,9 @@
 
 function generateRandomSuit(){
         
-        $suit = rand(1,4);
-        switch ($suit){
-            case 1: $folder = "clubs";
-                    break;
-            case 2: $folder = "diamonds";
-                    break;
-            case 3: $folder = "hearts";
-                    break;
-            case 4: $folder = "spades";
-                    break;
-            
-        }
+        $suit = rand(0,3);
+        $suitArray = array('clubs', 'diamonds', 'hearts','spades');
+        $folder = $suitArray[$suit];
         return $folder;
     }
    
@@ -24,8 +15,7 @@ function suitArr($cardValues){
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[1].png'>",
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[2].png'>",
                          "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[3].png'>",
-                         "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[4].png'>",
-                        $cardValues[5]);
+                         "<img src= 'img/cards/".generateRandomSuit()."/$cardValues[4].png'>");
      
     return $rand_suits;
                    
@@ -58,13 +48,48 @@ function acquireNumbers(){
         return $five_random;
 }
 
-
-function runner(){
-    $playerOneCardVals = acquireNumbers();
-    $playerOneCardImgTags = suitArr($playerOneCardVals);
-
-    return $playerOneCardImgTags;
+function getPlayerScore($arr){
+    return array_sum($arr);
 }
+
+function displayPlayerCards($playerCards){
+    foreach($playerCards as $card){
+        echo "<td>".$card."</td>";
+    }
+}
+function getWinner($scores){
+    $winner = 0;
+    $difference = $scores[0] - 42;
+    for($i = 1; $i < count($scores); $i++){
+        if($difference > $scores[$i] - 42){
+            $difference = $scores[$i] - 42;
+            $winner = $i;
+        }
+    }
+    return $winner;
+    
+}
+
+    $playerOneCardVals = acquireNumbers();
+    $playerOneCards = suitArr($playerOneCardVals);
+    
+    $playerTwoCardVals = acquireNumbers();
+    $playerTwoCards = suitArr($playerTwoCardVals);
+    
+    $playerThreeCardVals = acquireNumbers();
+    $playerThreeCards = suitArr($playerThreeCardVals);
+    
+    $playerFourCardVals = acquireNumbers();
+    $playerFourCards = suitArr($playerFourCardVals);
+    
+    $playerOneScore = getPlayerScore($playerOneCardVals);
+    $playerTwoScore = getPlayerScore($playerTwoCardVals);
+    $playerThreeScore = getPlayerScore($playerThreeCardVals);
+    $playerFourScore = getPlayerScore($playerFourCardVals);
+    
+    $winner = getWinner(array($playerOneScore, $playerTwoScore, $playerThreeScore,$playerFourScore));
+
+
 
 
 
