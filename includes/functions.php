@@ -88,9 +88,4 @@ function getWinner($scores){
     
     $winner = getWinner(array($playerOneScore, $playerTwoScore, $playerThreeScore,$playerFourScore));
 
-?>layerScore($playerThreeCardVals);
-    $playerFourScore  = getPlayerScore($playerFourCardVals);
-    
-    $winner = getWinner(array($playerOneScore, $playerTwoScore, $playerThreeScore,$playerFourScore));
-
 ?>
