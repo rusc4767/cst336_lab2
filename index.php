@@ -63,9 +63,10 @@
 
                 echo "</table>";                  
             ?>
-            <button onClick='location.reload();'>
-                Play Again
-            </button>
+                
+        <form action="">
+         <input  id="btn" type="submit" value="Play Again" />
+        </form>
                  
         </div>
         <div id="rules">
