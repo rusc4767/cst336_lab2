@@ -3,8 +3,6 @@
     Created on : 2015-02-11 10:44 AM
     Author     : sort1554
     Description: Main page for Silverjack game.
-    
-   
 -->
 <!DOCTYPE html>
 <html>
@@ -12,7 +10,6 @@
     <title>Lab 2: Silverjack</title>
     <meta charset="utf-8" />
     <link href="css/styles.css" rel="stylesheet">
-  
 </head>
 <body >
     <div id="wrapper" background="img/table.jpg">
