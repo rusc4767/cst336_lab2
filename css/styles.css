@@ -1,7 +1,7 @@
 /*
     Document   : labs/cst336_lab2/css/styles．css
     Created on : 2015-02-11 06:34 PM
-    Author     : rusc4767,sort1554
+    Author     : rusc4767
     Description:
     Purpose of the stylesheet follows.
     To change this template use Tools | Templates.
@@ -60,15 +60,6 @@ p{
     color:black;
     font-size:1.5em;  
 
-},.6);
-    border: 1px solid black;
-    text-align: center;
-    width: 650px;
-    height: 470px;
-    margin-left: auto;
-    margin-right: auto;
-   
-
 }
 
 td{
@@ -94,10 +85,9 @@ p{
 
 }
 
-192,192,.6);
-    border: 1px solid black;
-    color:black;
-    font-size:1.5em;  
 
+<<<<<<< HEAD
 }
+=======
+>>>>>>> 8f433610a0de7b3a58402cf3d4beeef678929f4d
 
